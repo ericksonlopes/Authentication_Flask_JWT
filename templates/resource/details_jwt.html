@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}Detalhes dos claims{% endblock %}
+
+{% block content %}
+<div class="div_center">
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Claims do token</span>
+            {% for claim in claims.keys() %}
+                <p>{{ claim }} - {{ claims[claim] }}</p>
+            {% endfor %}
+        </div>
+        <div class="card-action">
+          <a href="{{ url_for('auth_site.logout_site') }}">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
