@@ -10,5 +10,3 @@ app_resource_api = Blueprint('resource_api', __name__)
 def details_jwt():
     # retorna os claims na request
     return jsonify(**get_jwt()), 200
-
-

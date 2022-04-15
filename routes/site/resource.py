@@ -12,5 +12,3 @@ def details_jwt():
     claims = get_jwt()
     # renderiza o template
     return render_template('resource/details_jwt.html', claims=claims)
-
-

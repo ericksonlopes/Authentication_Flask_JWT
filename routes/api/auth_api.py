@@ -8,7 +8,7 @@ app_auth_api = Blueprint('auth_api', __name__)
 # Dados para teste
 user = {
     "id": 1, "username": "admin", "password": "123", "created_at": datetime.now().date().strftime('%d/%m/%Y %H:%M:%S')
-    }
+}
 
 
 @app_auth_api.route('/login', methods=['POST'])
@@ -28,5 +28,3 @@ def login():
         return jsonify(access_token=access_token), 201
     else:
         return jsonify("Usuario ou senha invalidos"), 401
-
-

@@ -1,10 +1,14 @@
 GET http://127.0.0.1:5000/api/resource/details-jwt
 Accept: application/json
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0ODQxMjQ0OSwianRpIjoiZTIyYTgxOWItNjE2OS00MDk2LWJhZDktZmNmMTQ1NzUwZDE4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsInBhc3N3b3JkIjoiMTIzIiwiY3JlYXRlZF9hdCI6IjI3LzAzLzIwMjIgMDA6MDA6MDAifSwibmJmIjoxNjQ4NDEyNDQ5LCJjc3JmIjoiYjM4OGQyMzUtNTRjNi00OTAxLTgzMzMtN2I1MGQ5MDJiNzAzIiwiZXhwIjoxNjQ4NDEzMzQ5fQ.rd76o_eW7Ug7u-WapZdUta9OYccVizi2033CIlWlbyk
+
 ###
 POST http://127.0.0.1:5000/api/auth/login
 Content-Type: application/json
 
-{"username": "admin", "password": "123"}
+{
+  "username": "admin",
+  "password": "123"
+}
 
 ###

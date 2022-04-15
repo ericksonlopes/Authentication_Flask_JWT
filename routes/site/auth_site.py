@@ -2,7 +2,6 @@ from flask_jwt_extended import set_access_cookies, create_access_token, unset_jw
 from flask import Blueprint, request, render_template, redirect
 from datetime import datetime
 
-
 # Criando blueprint das rotas de autenticação da api
 app_auth_site = Blueprint('auth_site', __name__)
 
